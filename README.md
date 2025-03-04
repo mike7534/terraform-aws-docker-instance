@@ -1,3 +1,14 @@
+ Go to the `README.md` and make a description of your module.
+
+---
+Terraform Module to provision an AWS EC2 instance with the latest amazon linux 2023 ami and installed docker in it.
+
+Not intended for production use. It is an example module.
+
+It is just for showing how to create a publish module in Terraform Registry.
+
+Usage:
+
 ```hcl
 
 provider "aws" {
@@ -5,6 +16,6 @@ provider "aws" {
 }
 
 module "docker_instance" {
-    source = "mike7534/docker-instance/aws"
+    source = "<github-username>/docker-instance/aws"
     key_name = "clarusway"
 }
